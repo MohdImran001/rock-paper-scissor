@@ -1,0 +1,71 @@
+$md : 756px;
+$sm : 414px;
+$xs : 375px;
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 40px;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+}
+
+.logo img {
+    width: 100%;
+}
+
+.score-card {
+    background: white;
+    margin-top: -5px;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 7px;
+    padding: 0.75rem 2.75rem 0 2.75rem;
+    
+    .text {
+        color: hsl(229, 64%, 46%);
+        padding: 0;
+        margin: 0;
+        letter-spacing: 3px;
+    }
+
+    .score {
+        color: hsl(229, 25%, 31%);
+        font-size: 56px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: $sm) {
+    .header {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (max-width: $xs) {
+    .header {
+        padding: 15px 10px;
+        margin: 20px 10px;
+    }
+
+    .logo img {
+        width: 80%;
+    }
+
+    .score-card {
+        padding: 0.50rem 1.75rem 0 1.75rem;
+
+        .score {
+            font-size: 40px;
+        }
+    }
+}
